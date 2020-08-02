@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>GeoJSON</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Odin Team" />
+
+        <!--  FavIcon  -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/Main/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Main/assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Main/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/Main/assets/favicons/site.webmanifest">
+
+        <!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+        <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <!-- FontAwesome Css -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <!-- LineIcons Css -->
+        <link rel="stylesheet" href="assets/css/LineIcons.css">
+        <!-- Owl Carousel Css -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!-- Magnific Css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Colors Css -->
+        <link rel="stylesheet" href="assets/css/color/orange-color.css" id="option-color">
+        <!--  Custom Style CSS  -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--  Icofont CSS  -->
+        <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+    </head>
+    <body data-spy="scroll" data-target="#scrollspy" data-offset="70" class="flat-demo">
+
+    <!--  Pre Loader  -->
+    <div id="overlayer"></div>
+    <span class="loader"></span>
+
+    <!-- Blog Single Modal Start -->
+    <div class="blog-single modal fade" id="blog-single" tabindex="-1" role="dialog" aria-labelledby="blogModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalScrollable">GeoJSON Demos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--   Blog-single   Start -->
+                    <div class="pt-4 pb-5 text-muted">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto blog">
+                                    <div class="rounded px-lg-5">
+                                        <div class="text-md-left">
+                                            <h4 class="mb-4">The best way to become a good web designer</h4>
+                                            <div class="image-border">
+                                                <img src="http://placehold.it/720x480" alt="">
+                                            </div>
+                                            <span class="d-inline-block py-4"> 1 April 2019
+                                        / By <span class="purple-color text-right"> John Doe. </span>
+                                        </span>
+                                            <p>These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Only for show.</p>
+                                            <div class="px-md-5 px-3 py-4 quotation">
+                                                <i class="base-color lni-quotation size-md"></i>
+                                                <h6 class="base-color font-italic mb-0">We Love Buna, lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper.</h6>
+                                            </div>
+                                            <p class="my-3">These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Only for show.</p>
+                                            <ul class="list-unstyled mt-4 checkmark-list">
+                                                <!-- Item-01 -->
+                                                <li class="mb-2">
+                                                    <span class="ml-1">The purpose of lorem ipsum is to create</span>
+                                                </li>
+                                                <!-- Item-02 -->
+                                                <li class="mb-2">
+                                                    <span class="ml-1">In particular, the garbled words of lorem ipsum</span>
+                                                </li>
+                                                <!-- Item-03 -->
+                                                <li class="mb-2">
+                                                    <span class="ml-1">occasionally circumstances occur in which toil</span>
+                                                </li>
+                                            </ul>
+
+                                            <!--Blog Reply-->
+                                            <div class="contact mt-4">
+                                                <div class="contact-form">
+                                                    <h2 class="text-left mb-4">Leave a reply</h2>
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 form-item">
+                                                                <div class="form-group">
+                                                                    <input name="name" id="blog-name" type="text" class="form-control" placeholder="Your Name*" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 form-item">
+                                                                <div class="form-group">
+                                                                    <input name="email" id="blog-email" type="email" class="form-control" placeholder="Your Email*" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 form-item">
+                                                                <div class="form-group">
+                                                                    <textarea name="comments" id="blog-comments" rows="4" class="form-control" placeholder="Your message..."></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 mt-4 text-left">
+                                                                <div class="button-border">
+                                                                    <button type="submit" class="pill-button" id="blog-submit-btn">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Blog Single Modal End  -->
+
+
+<!--    Header Start    -->
+<header id="header" class="header fixed-top">
+    <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand font-weight-bold" href="/index.html">Od<span class="base-color">in</span></a>
+            <!--  Navbar Toggler Button Start -->
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lni-menu size-md"></span>
+            </button>
+            <!--  Navbar Toggler Button End -->
+            <div class="collapse navbar-collapse" id="toggle-menu">
+                <ul class="navbar-nav nav-pills ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Main/team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Main/geojson.html">GeoJSON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Main/visuals.html">Visualisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="list-inline socails mt-4  d-lg-none">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+ <!-- Social -->
+ <div class="social-box">
+    <div class="follow-label">
+        <span>Follow Us</span>
+    </div>
+    <div class="social">
+        <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+        <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+        <a href="javascript:void(0);"><i class="fa fa-github"></i></a>
+        <a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a>
+    </div>
+</div>
+
+   
+    <!--  Hero Start  -->
+    <section id="hero" class="hero hero-02 full-screen p-0">
+        <div class="display-table">
+            <div class="display-content">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                            <div class="hero-content">
+                                <h1 class="dark-color mb-3">GeoJSON <span class="base-color"> Tutorials</span></h1>
+                                <h4 class="text-darktext-capitalize mb-0"><span class="base-color">Concepts |  </span> <span class="element" data-elements="Basics.,Applications.,Demos."></span></h4>
+                                <p class="text-muted my-4">Welcome to the GeoJSON Tutorial page, find resources to help understand GeoJSON.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Hero End  -->
+
+   
+     <!--  Blog Start  -->
+     <section id="blog" class="section blog py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-content mb-4">
+                        <h2 class="base-color">GeoJSON Tutorials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--  Item 01 -->
+                <div class="col-lg-4">
+                    <div class="blog-item box-border">
+                        <div class="blog-image">
+                            <img src="http://placehold.it/720x480" alt="/">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="lni-calendar base-color"></i>
+                                    <span class="text-muted">June 02, 2020 </span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="lni-comment base-color"></i>
+                                    <span class="text-muted">5</span>
+                                </li>
+                            </ul>
+                            <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> GeoJSON Basics</h6>
+                            <p class="text-dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <div class="blog-link">
+                                <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Item 02 -->
+                <div class="col-lg-4">
+                    <div class="blog-item box-border">
+                        <div class="blog-image">
+                            <img src="http://placehold.it/720x480" alt="/">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="lni-calendar base-color"></i>
+                                    <span class="text-muted">June 08, 2020 </span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="lni-comment base-color"></i>
+                                    <span class="text-muted">3</span>
+                                </li>
+                            </ul>
+                            <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> GeoJSON Applications</a></h6>
+                            <p class="text-dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <div class="blog-link">
+                                <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Item 03 -->
+                <div class="col-lg-4">
+                    <div class="blog-item box-border">
+                        <div class="blog-image">
+                            <img src="http://placehold.it/720x480" alt="/">
+                        </div>
+                        <div class="blog-content">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="lni-calendar base-color"></i>
+                                    <span class="text-muted">June 12, 2020 </span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="lni-comment base-color"></i>
+                                    <span class="text-muted">8</span>
+                                </li>
+                            </ul>
+                            <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> GeoJSON Demos</a></h6>
+                            <p class="text-dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <div class="blog-link">
+                                <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--   Blog End   -->
+
+                <!-- Contact Start -->
+                <section id="contact" class="section contact py-5">
+                    <div class="container">
+            
+                        <div class="row copy-right">
+                            <div class="col-12 text-center text-dark">
+                                <p>Copyright © 2020. Designed by <span class="base-color">Odin</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  Contact End  -->
+
+        <!--   Color Scheme  -->
+        <a class="color-scheme hide text-white bg-base-color d-inline-block" href="javascript:void(0)"><i class="lni-night"></i></a>
+        <a class="color-scheme hide color-scheme-light text-white bg-base-color d-none" href="javascript:void(0)"><i class="lni-sun"></i></a>
+
+        <!-- Start Color Pallet -->
+        <div id="color-switcher" class="color-switcher" >
+            <div class="text-center color-pallet hide">
+                <h6 class="text-center mt-3">Select your color</h6>
+                <ul class="pattern">
+                    <li>
+                        <a class="color1" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color2" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color3" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color4" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color5" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color6" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color7" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color8" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color9" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pallet-button hide">
+                <a href="#" class="cp-toggle"><i class="fa fa-cog fa-spin"></i></a>
+            </div>
+        </div>
+        <!-- End Color Pallet -->
+
+
+
+
+
+
+    <!--  Jquery  Js  -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  Bootstrap Js  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--  Easing Js  -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--  Type  Js  -->
+    <script src="assets/js/typed.js"></script>
+    <!--  Owl Carousel Js  -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--  Isotope  Js  -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  Count  Js  -->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!--  PopUp Js  -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcmB207_E3E4SkA8jTA8FQjSWTop9YxZU"></script>
+    <!--  Custom JS  -->
+    <script src="assets/js/main.js"></script>
+    </body>
+</html>
