@@ -1,0 +1,69 @@
+#map {
+    height: 600px;
+    width: auto;
+}
+
+/* Optional settings. Do as you wish with these*/
+
+main {
+    height: 96%;
+    margin: 1%;
+    padding: 0;
+}
+
+#other {
+    height: 30%;
+    width: 50%;
+}
+
+
+#feedColumn {
+
+    padding: 1em;
+}
+
+/* If you want to make the buttons and the map display without scrolling
+
+#feedColumn {
+    width: 35%;
+    float: left;
+    padding: 1em;
+}
+*/
+
+
+.child-prop,
+.feed-name,
+.feed-date {
+    text-transform: capitalize;
+}
+
+.feed-date {
+    width: 50%;
+    border-bottom: 1px solid #999;
+    margin: 2em 0em 1em 0em;
+    padding-bottom: 0.2em;
+    font-weight: bold;
+}
+
+.feed-name {
+    padding: 0.5em;
+    margin: 0 0.5em 0 0;
+    background-color: #0000CD;
+    color: #fff;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.feed-name:hover {
+    background-color: #000;
+}
+
+.child-prop {
+    display: inline-block;
+    margin: 0 0 0.5em 0;
+}
