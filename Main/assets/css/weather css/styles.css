@@ -1,0 +1,95 @@
+/* http://furtive.co helpers */
+
+#weather-app body {
+	font-family: 'IBM Plex Sans';
+}
+
+#weather-app h1, h2, h3 {
+	font-weight: 100;
+}
+
+#weather-app h4, h5, h6 {
+	font-weight: 600;
+}
+
+#weather-app .full-page {
+	min-height: 100vh;
+}
+#weather-app .vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+#weather-app .container {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 0 3rem;
+}
+
+
+#weather-app .txt--uppercase {
+	text-transform: uppercase;
+}
+
+
+
+#weather-app table {
+	width: 100%;
+}
+#weather-app table tr {
+	border-bottom: thin solid rgba(216,216,216,.99);
+	
+}
+#weather-app table td {
+	padding: 1rem;
+	font-weight: 600;
+}
+
+#weather-app hr {
+	border-top: thin solid rgba(216,216,216,.99);
+}
+
+
+#weather-app .my3 {margin-top: 3rem; margin-bottom: 3rem; }
+#weather-app .my4 {margin-top: 4rem; margin-bottom: 4rem; }
+
+
+#weather-app input[type=radio] {
+	display: inline-block;
+	vertical-align: bottom;
+	width: auto;
+}
+
+#weather-app .weather-settings {
+	max-width: 400px;
+	margin: 0px auto;
+}
+
+#weather-app #zipcode{
+	text-align: center;
+	border:none; 
+	border-bottom: 1px solid;
+}
+
+#weather-app input{
+	outline: none;
+    border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#weather-app *:focus {
+    outline: none;
+}
+
+#weather-app .clickable{
+	cursor: pointer;
+}
+
+
+/* custom icons */
+#weather-app .wa-icon {
+	width: 1rem;
+	height: 1rem;
+	stroke: black;
+}
