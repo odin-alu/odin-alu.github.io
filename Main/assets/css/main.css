@@ -498,9 +498,9 @@ canvas.particles-js-canvas-el {
           HERO-02
 -------------------------*/
 .hero-02 {
-  /* background: url("http://placehold.it/1920x1280") no-repeat; */
+  /* background: url("/cov19.jpg") no-repeat; */
   background-size: cover;
-  /* box-shadow: inset 0 0 0 2000px rgba(241, 243, 246, 0.5); */
+  /* box-shadow: inset 0 0 0 2000px rgba(241, 243, 246, 0.8); */
 }
 
 /*-------------------------

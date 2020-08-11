@@ -83,7 +83,7 @@ var barChartData = {
   }
   
   window.onload = function() {
-    var ctx = document.getElementById("canvas").getContext("2d");
+    var ctx = document.getElementById("canvasStock").getContext("2d");
     window.myBar = new Chart(ctx, {
       type: "horizontalBar",
       data: barChartData,
