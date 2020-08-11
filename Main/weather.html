@@ -34,11 +34,11 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <!--  Icofont CSS  -->
         <link rel="stylesheet" href="assets/icofont/icofont.min.css">
-        <!--Weather CSS-->
+        <!--Weather CSS
         <link rel="stylesheet" href="/Main/assets/css/weather css/furtive.min.css">
 		  <link rel="stylesheet" href="/Main/assets/css/weather css/fonts.css">
 		  <link rel="stylesheet" href="/Main/assets/css/weather css/weather-icons.min.css">
-		  <link rel="stylesheet" href="/Main/assets/css/weather css/styles.css">
+		  <link rel="stylesheet" href="/Main/assets/css/weather css/styles.css">-->
     </head>
     <body data-spy="scroll" data-target="#scrollspy" data-offset="70" class="flat-demo">
 
@@ -72,7 +72,7 @@
                         <a class="nav-link active" href="/Main/weather.html">Weather</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Earthquake</a>
+                        <a class="nav-link" href="/Main/earthquakes.html">Earthquake</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Main/stocks.html">Stocks</a>
@@ -116,27 +116,104 @@
                         <div class="col-lg-6 order-2 order-lg-1">
                             <div class="hero-content">
                                 <h1 class="dark-color mb-3">Weather <span class="base-color"> Forecast</span></h1>
-                                <h4 class="text-darktext-capitalize mb-0"><span class="base-color">Search by |  </span> <span class="element" data-elements="Zip Code.,City Name.,Geolocation."></span></h4>
-                                <p class="text-muted my-4">A 5-day weather forecast chart based on geolocation or search. </p>
+                                <h4 class="text-darktext-capitalize mb-0"><span class="base-color">Search by |  </span> <span class="element" data-elements="City Name."></span></h4>
+                                <p class="text-muted my-4">A 5-day weather forecast chart based on search. </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
     </section>
     <!--  Hero End  -->
 
    
     <section id="about" class="about pb-5 pt-6">
         <div class="container">
+            <style scoped>
+                @import "/Main/assets/css/weather.css";
+            </style>
             <section id="portfolio" class="section portfolio py-5">
-                <div class="title-content mb-4">
-                    <div id="weather-app"></div>
-                </div>
+                <br><br><br>
+        <div id="ci"><input type="text" id="city" name="city" placeholder="Enter city"></div>
+        <br>
+        <div id="sub"><input type="button" value="Submit" id="submit"></div>
+        <span class="msg"></span>
+        <br><br><br>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm" id="day">
+                        <div class="card" style="width: 18rem; background-color: #f8f8f8; border-color: #f8f8f8;">
+                            <div class="card-body">
+                            <h5 class="card-title" id="date"></h5>
+                              <h5 class="card-title" id="city-name"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted" id="desc"></h6>
+                              <h1 class="card-text" id="temp"><h6 class="card-text" id="icon"></h6></h1>
+                              <h6 class="card-link" id="feels"></h6>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-sm" id="day">
+                        <div class="card" style="width: 18rem; background-color: #f8f8f8; border-color: #f8f8f8;">
+                            <div class="card-body">
+                            <h5 class="card-title" id="date1"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted" id="desc1"></h6>
+                              <h1 class="card-text" id="temp1"><h6 class="card-text" id="icon1"></h6></h1>
+                              <h6 class="card-link" id="feels1"></h6>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-sm" id="day">
+                        <div class="card" style="width: 18rem; background-color: #f8f8f8; border-color: #f8f8f8;">
+                            <div class="card-body">
+                            <h5 class="card-title" id="date2"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted" id="desc2"></h6>
+                              <h1 class="card-text" id="temp2"><h6 class="card-text" id="icon2"></h6></h1>
+                              <h6 class="card-link" id="feels2"></h6>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm" id="day">
+                        <div class="card" style="width: 18rem; background-color: #f8f8f8; border-color: #f8f8f8;">
+                            <div class="card-body">
+                            <h5 class="card-title" id="date3"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted" id="desc3"></h6>
+                              <h1 class="card-text" id="temp3"><h6 class="card-text" id="icon3"></h6></h1>
+                              <h6 class="card-link" id="feels3"></h6>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-sm" id="day">
+                        <div class="card" style="width: 18rem; background-color: #f8f8f8; border-color: #f8f8f8;">
+                            <div class="card-body">
+                            <h5 class="card-title" id="date4"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted" id="desc4"></h6>
+                              <h1 class="card-text" id="temp4"><h6 class="card-text" id="icon4"></h6></h1>
+                              <h6 class="card-link" id="feels4"></h6>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-sm" id="day">
+                        <div class="card" style="width: 18rem; background-color: #f8f8f8; border-color: #f8f8f8;">
+                            <div class="card-body">
+                            <h5 class="card-title" id="date5"></h5>
+                              <h6 class="card-subtitle mb-2 text-muted" id="desc5"></h6>
+                              <h1 class="card-text" id="temp5"><h6 class="card-text" id="icon5"></h6></h1>
+                              <h6 class="card-link" id="feels5"></h6>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+            </section>
+                    <!--  Portfolio End  -->
                 </div>
             </section>
-
                 <!-- Contact Start -->
                 <section id="contact" class="section contact py-5">
                     <div class="container">
@@ -220,11 +297,24 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcmB207_E3E4SkA8jTA8FQjSWTop9YxZU"></script>
     <!--  Custom JS  -->
     <script src="assets/js/main.js"></script>
-    <!-- Scripts for weather app-->
+    <script src="assets/js/weather.js"></script>
+    <script>
+        document.getElementById("submit").addEventListener("click", load);
+        var input = document.getElementById("city");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("submit").click();
+                document.getElementById("submit").reset();
+            }
+        });
+
+    </script>
+    <!-- Scripts for weather app
 		<script src="/Main/assets/js/storage.js"></script>
 		<script src="/Main/assets/js/location.js"></script>
 		<script src="/Main/assets/js/weather.js"></script>
 		<script src="/Main/assets/js/templates.js"></script>
-		<script src="/Main/assets/js/weatherApp.js"></script>
+		<script src="/Main/assets/js/weatherApp.js"></script>-->
     </body>
 </html>
