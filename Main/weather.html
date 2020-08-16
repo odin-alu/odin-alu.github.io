@@ -130,17 +130,22 @@
    
     <section id="about" class="about pb-5 pt-6">
         <div class="container">
-            <style scoped>
-                @import "/Main/assets/css/weather.css";
-            </style>
+            
             <section id="portfolio" class="section portfolio py-5">
                 <br><br><br>
-        <div id="ci"><input type="text" id="city" name="city" placeholder="Enter city"></div>
+        <form>        
+        <div id="ci"><input type="text" id="city" name="city" placeholder="Enter city" autofocus></div>
         <br>
         <div id="sub"><input type="button" value="Submit" id="submit"></div>
         <span class="msg"></span>
         <br><br><br>
-                <div class="container">
+        </form>
+        <section class="ajax-section">
+            <div class="container">
+              <ul class="cities"></ul>
+            </div>
+          </section>
+               <!-- <div class="container">
                     <div class="row">
                       <div class="col-sm" id="day">
                         <div class="card" style="width: 18rem; background-color: #f8f8f8; border-color: #f8f8f8;">
@@ -208,7 +213,7 @@
                           </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
         </div>
             </section>
                     <!--  Portfolio End  -->
