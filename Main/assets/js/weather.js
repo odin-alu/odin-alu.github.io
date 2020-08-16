@@ -1,6 +1,6 @@
 function load(){
 	var city = document.getElementById("city").value;
-	urlAPI = 'http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=metric&appid=663718f5418b05dca23eb3d1d5fe3a67';
+	urlAPI = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=metric&appid=663718f5418b05dca23eb3d1d5fe3a67';
 	const form = document.querySelector(".about form");
 	const input = document.querySelector(".about input");
 	const msg = document.querySelector(".about .msg");
